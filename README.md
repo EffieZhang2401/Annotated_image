@@ -7,7 +7,7 @@
 	python3.9 annotated_image.py
 2. Used Libraries:
 	xml.etree.ElementTree, cv2, os, re, tqdm
-3. Thinking Process
+3. Design Decisions:
 	Traverse all the png files in the input path and skip the xml files. 
     Use the png files to find the corresponding xml files.
     Use xml.etree.ElementTree to get the root of xml files. Then use breadth first search to find all the leaf node(I use two stack one is to store all the nodes, one to store only the leaf node).
